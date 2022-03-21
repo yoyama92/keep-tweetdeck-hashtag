@@ -1,0 +1,20 @@
+{
+  "name": "hashtag",
+  "description": "",
+  "version": "1.0",
+  "manifest_version": 3,
+  "content_scripts": [
+    {
+      "matches": [
+        "https://tweetdeck.twitter.com/"
+      ],
+      "js": [
+        "background.js"
+      ],
+      "run_at": "document_end"
+    }
+  ],
+  "permissions": [
+    "scripting"
+  ]
+}
